@@ -1,5 +1,5 @@
 <?php
-class Test 
+class Test {
 
   public function __construct() {
     $thing = 'Hello World!';
