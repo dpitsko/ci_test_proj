@@ -1,6 +1,10 @@
 machine:
   php:
     version: 5.6.22
+dependencies:
+  override:
+    - composer --version
+    - composer global require "squizlabs/php_codesniffer=*"
 test:
   override:
     - phpcs --version
