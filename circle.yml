@@ -8,4 +8,4 @@ dependencies:
 test:
   override:
     - phpcs --version
-    - phpcs test.php
+    - phpcs .
