@@ -4,4 +4,4 @@ machine:
   test:
     override:
       - phpcs --version
-      - phpcs .
+      - phpcs test.php
