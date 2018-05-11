@@ -1,0 +1,16 @@
+machine:
+  php:
+    version: 5.6.22
+dependencies:
+  override:
+    - composer --version
+    - composer global require "squizlabs/php_codesniffer=*"
+    - composer global require "phpmd/phpmd"
+test:
+  override:
+    - find . -name "*.php" -print0 | xargs -0 -n1 -P8 php -l
+    - phpcs --version
+    - phpcs .
+    - phpmd --version
+    - ls
+    - phpmd . text phpmd.xml
